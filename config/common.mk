@@ -245,4 +245,7 @@ $(call inherit-product, vendor/pixel-framework/config.mk)
 # Themed icons
 $(call inherit-product, packages/overlays/ThemeIcons/config.mk)
 
+# Signing
+-include vendor/priv-keys/keys.mk
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
